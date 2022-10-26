@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      width: 100vw;
+      height: 100vh;
+    }
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    header {
+      background-color: rgb(238, 202, 250);
+      color: white;
+      text-shadow: 1px 1px 1px black;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+    }
+    section {
+      text-align: center;
+    }
+
+    section input {
+      padding: 10px 12px;
+      margin: 6px;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border-radius: 5px;
+      background-color: rgba(195, 125, 200, 0.752);
+      color: white;
+      border: none;
+    }
+    button:hover {
+      cursor: pointer;
+    }
+
+    table {
+      text-align: center;
+      border-collapse: collapse;
+      margin: 13px auto;
+      width: 70%;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid #ddd;
+      border-top: 1px solid #ddd;
+      padding: 10px 13px;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>대한 고등학교</h1>
+      <p>대한고등학교 학생정보관리 2022</p>
+    </header>
+    <section class="main">
+      <input type="number" placeholder="학번" />
+      <input type="text" placeholder="이름" />
+      <input type="text" placeholder="학과" />
+      <input type="number" placeholder="학년" />
+      <input type="text" placeholder="주소" />
+      <input type="text" placeholder="전화번호" />
+      <button>추가</button>
+
+      <table>
+        <thead>
+          <th>학번</th>
+          <th>이름</th>
+          <th>학과</th>
+          <th>학년</th>
+          <th>주소</th>
+          <th>전화번호</th>
+        </thead>
+        <tbody class="list"></tbody>
+      </table>
+    </section>
+  </body>
+  <script src="main01.js"></script>
+</html>
