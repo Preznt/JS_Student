@@ -29,8 +29,15 @@
       margin: 10px;
       text-align: center;
     }
-    section {
+    section.main {
       text-align: center;
+    }
+
+    div {
+      border: 1px solid rgb(182, 163, 195);
+      width: 75%;
+      padding: 7px;
+      margin: 20px auto;
     }
 
     section input {
@@ -46,6 +53,7 @@
       color: white;
       border: none;
     }
+
     button:hover {
       cursor: pointer;
     }
@@ -70,13 +78,15 @@
       <p>대한고등학교 학생정보관리 2022</p>
     </header>
     <section class="main">
-      <input type="number" placeholder="학번" />
-      <input type="text" placeholder="이름" />
-      <input type="text" placeholder="학과" />
-      <input type="number" placeholder="학년" />
-      <input type="text" placeholder="주소" />
-      <input type="text" placeholder="전화번호" />
-      <button>추가</button>
+      <div>
+        <input type="number" placeholder="학번" />
+        <input type="text" placeholder="이름" />
+        <input type="text" placeholder="학과" />
+        <input type="number" placeholder="학년" />
+        <input type="text" placeholder="주소" />
+        <input type="text" placeholder="전화번호" />
+        <button>추가</button>
+      </div>
 
       <table>
         <thead>

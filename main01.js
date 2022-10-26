@@ -13,7 +13,7 @@ const addStudent = () => {
     주소: inputs[4].value,
     전화번호: inputs[5].value,
   };
-  //   studentList = Array.from(studentList);
+
   studentList.push(student);
 };
 
@@ -63,6 +63,10 @@ const loadStudent = () => {
   const localInfo = localStorage.getItem("StudentInfo");
   const arrayInfo = JSON.parse(localInfo);
   studentList = arrayInfo;
+  if (!studentList) {
+    studentList = [];
+    return false;
+  }
 };
 
 loadStudent();
